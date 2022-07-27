@@ -122,9 +122,30 @@ class LinkedList:
             print("Not exited")
 
 
+
+
+def insertionSortList(head):
+    if not head:
+        return
+    if not head.next:
+        return head
+    curr = head.next
+    root = Node()
+    root.next = head
+    while curr:
+        prev = root
+        while prev.next.value <= curr.value:
+            prev = prev.next
+        next = curr.next
+        curr.next = prev.next
+        prev.next = curr
+        curr = next
+    return root.next
+
+
 l = LinkedList()
 l.append(1)
-l.append(2)
 l.append(3)
-l.remove(1)
-l.iter_node()
+l.append(2)
+result = insertionSortList(l.root.next)
+print(result.value)
