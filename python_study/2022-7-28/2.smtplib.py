@@ -76,9 +76,12 @@ mail_host = "smtp.qq.com"
 mail_user = "1916259704@qq.com"
 mail_pass = "jkdydaprkbiceeba"
 recv = "1916259704@qq.com"
+
 s = SMTP(mail_host)
 s.login(mail_user, mail_pass)
+
 message = MIMEText(Subject, "html", "utf-8")
+
 message["from"] = mail_user
 message["To"] = recv
 message["Subject"] = "wj-email"
