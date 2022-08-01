@@ -16,12 +16,10 @@
 # s.login("1916259704@qq.com", "jkdydaprkbiceeba") # 登录
 # msg = """\
 # From: 1916259704@qq.com
-# To: wujun8@xiaomi.com
 # Subject: wj
 #
 # this is my test
 # """
-# s.sendmail("1916259704@qq.com", ["wujun8@xiaomi.com"], msg) # 发送
 
 # from smtplib import SMTP
 # from email.mime.text import MIMEText
@@ -32,7 +30,7 @@
 # mail_pass = "jkdydaprkbiceeba"
 
 # 收件人
-# recv = "wujun8@xiaomi.com"
+
 # recv = "1916259704@qq.com"
 
 # 构造邮件内容
