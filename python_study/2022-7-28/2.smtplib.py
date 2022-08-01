@@ -48,6 +48,7 @@
 # s.login(mail_user,mail_pass)
 # s.sendmail(mail_user, recv, message.as_string())
 
+
 import psutil
 from smtplib import SMTP
 from email.mime.text import MIMEText
