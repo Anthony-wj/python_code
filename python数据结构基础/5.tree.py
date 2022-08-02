@@ -33,3 +33,10 @@ class Tree:
 t = Tree()
 for i in range(10):
     t.add(i)
+
+
+'''
+    先序遍历： 根左右
+    中序遍历： 左根右
+    后序遍历： 左右根
+'''
