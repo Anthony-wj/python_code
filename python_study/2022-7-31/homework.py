@@ -66,7 +66,7 @@ if __name__ == "__main__":
     with db:
         cursor = db.cursor()
         for r in r_list:
-            print(r.get())
+            # print(r.get())
             dt, prov, isp, bandwidthh = r.get()
             sql = "INSERT INTO nginx_log(log_dt, province, isp, bandwidth) VALUES (%s, %s, %s, %s)"
             cursor.execute(sql, (dt, prov, isp, bandwidthh))
